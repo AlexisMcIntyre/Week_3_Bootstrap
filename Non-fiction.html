@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Fiction</title>
+</head>
+<link
+    rel="stylesheet"
+    href="./node_modules/bootstrap/dist/css/bootstrap.css"
+  />
+<body class="bg-primary">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">DMTB!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Fiction.html">Fiction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Non-fiction.html">Non-Ficiton</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!--Below is the table of non-fiction books with a dark theme. They are within a container, allowing them to be responsive to the screen size. The headers are defined within "thead" and the rows and columns are defined in "scope".-->
+
+      <div class="container mt-5">
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Book</th>
+            <th scope="col">Author</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Rating</th>
+            <th scope="col">Synopsis</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <th scope="row">1</th>
+            <td>Ishmael</td>
+            <td>Daniel Quinn</td>
+            <td>Society</td>
+            <td>4/5</td>
+            <td>Interesting ideas on how our modern society was formed.</td>
+
+          </tr>
+
+          <tr>
+            <th scope="row">2</th>
+            <td>12 Rules for Life</td>
+            <td>Jordan Peterson</td>
+            <td>Human Behavior</td>
+            <td>4/5</td>
+            <td>A great guide for building fortitude in young people; particularly males.</td>
+
+          </tr>
+
+          <tr>
+            <th scope="row">3</th>
+            <td>Desert Solitaire</td>
+            <td>Edward Abbey</td>
+            <td>Memoir</td>
+            <td>5/5</td>
+            <td>A introspective man shares his experiences living a season in Moab as a ranger in the 1960's.</td>
+
+          </tr>
+
+          <tr>
+            <th scope="row">4</th>
+            <td>Origins</td>
+            <td>Neil Degrasse Tyson</td>
+            <td>Astronomy</td>
+            <td>5/5</td>
+            <td>A brief history of our universe explained for laypeople.</td>
+        </tr>
+
+          <tr>
+            <th scope="row">5</th>
+            <td>Chaos</td>
+            <td>Tom O'neill</td>
+            <td>History</td>
+            <td>4/5</td>
+            <td>A history of Charles Manson told as never before...you will never see events the same again.</td>
+
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+</body>
+</html>

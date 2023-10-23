@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficiton Books</title>
+</head>
+<link
+    rel="stylesheet"
+    href="./node_modules/bootstrap/dist/css/bootstrap.css"
+  />
+
+  <body class="bg-primary">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand">DMTB!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Fiction.html">Fiction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Non-fiction.html">Non-Ficiton</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+
+      <!--Below are some "cards" to display some books and their associated details with an option to purchase in a nice format. There is a list within each card that is seperated by group, which places a grey section line between them. The button class I added to each card has the link to the website (via a href) page where the user can purchase the book. Because of the class of "col-sm", the cards will fill the space allotted to them but when the screen size decreases, they begin to stack on one another. They are also spaced nicely from one another with the "m-2" giving a margin between the cards.-->
+
+    <div class="row">
+        <div class="col-sm m-2">
+            <div class="card" style="width: 15rem;">
+                <img src="Dune.JPG" class="card-img-top" alt="Dune book">
+                <div class="card-body">
+                    <h5 class="card-title">Dune</h5>
+                    <p class="card-text">Frank Herbert</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Sci-Fi</li>
+                        <li class="list-group-item">Book 1 of 6</li>
+                        <li class="list-group-item">An epic tale combining threads of social, political, ecological, and religious themes told over millenia.</li>
+                    </ul>
+                    <a href="https://www.amazon.com/Dune-Frank-Herbert-ebook/dp/B00B7NPRY8/ref=sr_1_2?crid=2GJMXQ19OIVKU&keywords=dune&qid=1698013573&sprefix=dune%2Caps%2C145&sr=8-2" class="btn btn-primary">Buy it now!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm m-2">
+            <div class="card" style="width: 15rem;">
+                <img src="WUBC.JPG" class="card-img-top" alt="Dune book">
+                <div class="card-body">
+                     <h5 class="card-title">The Wind-up Bird Chronicle</h5>
+                     <p class="card-text">Haruki Murakami</p>
+                    <ul class="list-group list-group-flush">
+                         <li class="list-group-item">Surreal Fiction</li>
+                         <li class="list-group-item">Stand-alone book</li>
+                         <li class="list-group-item">A compelling and mind-bending tale of a man searching for his missing wife.</li>
+                     </ul>
+                      <a href="https://www.amazon.com/Wind-Up-Bird-Chronicle-Vintage-International-ebook/dp/B003XT605Y/ref=sr_1_1?crid=5JHDUD2WRAI1&keywords=wind+up+bird+chronicle+murakami&qid=1698013609&sprefix=wind+up+%2Caps%2C142&sr=8-1" class="btn btn-primary">Buy it now!</a>
+                    </div>
+                </div>
+             </div>
+
+        <div class="col-sm m-2">
+            <div class="card" style="width: 15rem;">
+                 <img src="Ubik.JPG" class="card-img-top" alt="Dune book">
+                    <div class="card-body">
+                        <h5 class="card-title">Ubik</h5>
+                        <p class="card-text">Phillip K Dick</p>
+                        <ul class="list-group list-group-flush">
+                             <li class="list-group-item">Sci-Fi</li>
+                             <li class="list-group-item">Stand-alone book</li>
+                            <li class="list-group-item">A mind-bending tale of a crew of psychics who are sent through a strange simulation.</li>
+                        </ul>
+                        <a href="https://www.amazon.com/Ubik-Philip-K-Dick/dp/0547572298/ref=sr_1_1?crid=2USIF7CG00W3G&keywords=ubik+philip+k+dicks&qid=1698013631&sprefix=ubik%2Caps%2C138&sr=8-1" class="btn btn-primary">Buy it now!</a>
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+</body>
+</html>

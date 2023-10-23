@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMTB -- Don't Miss These Books!</title>
+    <!--Below I am linking to the style sheet as defined by Bootstrap-->
+    <link
+    rel="stylesheet"
+    href="./node_modules/bootstrap/dist/css/bootstrap.css"
+  />
+</head>
+
+<!--Below is my navigation bar. It shows the brand name, and the 3 page selections (navigation items) side-by-side when the page is large enough. I tried to get it to work when the screen is small enough that only the icon shows for navigation, but I was not able to make it work. -->
+
+<body class="bg-primary">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand">DMTB!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Fiction.html">Fiction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Non-fiction.html">Non-Ficiton</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+<!--Section 1-Top of Page w Banner-->
+
+<!--I styled my page headers with "display" to make them stand out from the text below. I also placed and image below within a span class for formatting and a border, then made the image class fluid so that it would be responsive to the screen size.-->
+<div class="container text-center p-2" >
+    <div class="row align-items-center">
+        <h1 class="display-1">DMTB!</h1>
+        <h3 class="display-3">(Don't Miss These Books!)</h3>
+
+        <span class="p-1 pt-3 pb-3" style="border: 1px solid black">
+        <img
+            src="book_shelf.JPG"
+            class="container-fluid"
+            alt="Books on a shelf"
+         />
+        </span>
+    </div>
+</div>
+
+<!--Section 2-Book Selection-->
+
+<!--Below I experimented with formatting within a fluid container. It is made up of 3 elements which are the text box, the 3 link columns, and the newsletter or form box. The text box took the fluid formatting from its parent class of being fluid. The link boxes and form box also took the fluid property from their parent, but I broke out some rows and columns. The 3 link boxes are each in their own column, and assigned them the size of 3 with the form being a size of 9 so they aligned. I gave them a break point of small so that they wouln't start stacking until the screen size was smaller than 576px. In the form, I did a mock newsletter signup where I have the user entering their email with th email input type and had a selection class so they could pick which free book they want from several options. Finally I had a checkbox as an option if they also want to sign up for a different newsletter. -->
+<div class="container-fluid text-center"> <!--style="border: 2px solid red"-->
+    <div class="col bg-light p-2 mb-3" style="border: 5px solid black">
+        <h5>Hi there!</h5>
+        <p> I'm Alexis, and I'm an avid book reader! Whether it is fiction or non-fiction, manga, or even cook books, I am interested! I hope the content on this site inspires you to pick up your next book. </p>
+        <p>Please use the navigation bar above to find your next book, or below, you can find some links to other sites I recommend!</p>
+    </div>
+
+    <div class="row mb-3 bg-light text-center p-2" style="border: 2px solid black">
+
+            <div class="col-sm-3 m-1 p-1" style="border:1px dashed black">
+                <a href="https://www.goodreads.com/">GoodReads</a>
+                </div>
+            <div class="col-sm-3 m-1 p-1" style="border:1px dashed black">
+                <a href="https://seattle.bibliocommons.com/list/share/1267468257/1792494519">Seattle Public Library</a>
+                </div>
+            <div class="col-sm-3 m-1 p-1" style="border:1px dashed black">
+                <a href="https://www.rd.com/list/best-nonfiction-books/">Reader's Digest</a>
+                </div>
+
+            <div class="col-sm-9 text-center m-2 p-3" style="border: 5px solid black">
+                 <form>
+                    <h3>Sign up for the DMTB! Newsletter!</h3>
+                        (And receive a free E-book!)
+                    <div class="form-group m-2">
+                        <label for="Email">Email address</label>
+                        <input type="email" class="form-control" id="Email"  placeholder="Email">
+                    </div>
+                    <div class="form-group m-2">
+                        <label for="SelectBook">Select your free digital book!</label>
+                         <select class="form-control" id="SelectBook">
+                            <option>Dune</option>
+                            <option>Ishmael</option>
+                             <option>Skyrim Lore bundle</option>
+                             <option>Origins</option>
+                         </select>
+                    </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="DMTM">
+                <label class="form-check-label" for="DMTM">Add me to your DMTM! (Don't Miss These Movies!) newsletter too!</label>
+            </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+      </div>
+    </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
